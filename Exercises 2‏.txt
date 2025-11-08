@@ -1,0 +1,51 @@
+#include <bits/stdc++.h>
+using namespace std;
+void q1(int x)
+{
+    if (x >= 0)
+    {
+        if (x % 2 == 0)
+            cout << "positive even";
+        else
+            cout << "positive odd";
+    }
+    else
+        cout << "NEGATIVE";
+}
+void q2(int x)
+{
+    if (x <= 100)
+    {
+        int b = x * .1;
+        int c = x - b;
+        cout << c;
+    }
+    else
+        cout << x;
+}
+void q3(int x)
+{
+    if (x % 400 == 0)
+    {
+        cout << x << " is leap year";
+    }
+    else
+    {
+        if (x % 4 == 0 && x % 100 != 0)
+            cout << x << " is leap year";
+        else
+            cout << x << " is  not leap year";
+    }
+}
+int main()
+{
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    int x;
+    cin >> x;
+    q1(x);
+    // q2(x);
+    // q3(x);
+    return 0;
+}
