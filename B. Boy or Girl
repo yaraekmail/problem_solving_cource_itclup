@@ -1,0 +1,30 @@
+
+https://codeforces.com/group/Hv4K04mXo4/contest/662062/problem/B
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    string s;
+    cin >> s;
+    int c = 0;
+    vector<int> freq(201, 0);
+    for (int i = 0; i < s.size(); i++)
+    {
+        {
+            freq[s[i]]++;
+            if (freq[s[i]] < 2)
+                c++;
+        }
+    }
+    if (c % 2 == 0)
+        cout << "CHAT WITH HER!";
+    else
+        cout << "IGNORE HIM!";
+    return 0;
+}
