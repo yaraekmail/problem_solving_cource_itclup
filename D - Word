@@ -1,0 +1,38 @@
+
+
+https://codeforces.com/group/Hv4K04mXo4/contest/662062/problem/D
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    string s;
+    cin >> s;
+    int c = 0;
+
+    for (int i = 0; i < s.size(); i++)
+        if (s[i] >= 'A' && s[i] <= 'Z')
+            c++;
+
+    if (c <= (s.size() - c))
+    {
+        for (int i = 0; i < s.size(); i++)
+            if (s[i] >= 'A' && s[i] <= 'Z')
+
+                s[i] = tolower(s[i]);
+    }
+    else
+    {
+        for (int i = 0; i < s.size(); i++)
+
+            if (s[i] >= 'a' && s[i] <= 'z')
+
+                s[i] = toupper(s[i]);
+    }
+
+    cout << s;
+    return 0;
+}
