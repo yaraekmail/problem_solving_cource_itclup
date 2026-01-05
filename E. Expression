@@ -1,0 +1,19 @@
+https://codeforces.com/group/Hv4K04mXo4/contest/662062/problem/E
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    int a, b, c;
+    cin >> a >> b >> c;
+    int q, w, e, r;
+    q = a + (b * c);
+    w = a * (b + b);
+    e = a * b * c;
+    r = (a + b) * c;
+    cout << max(q, max(w, max(e, r)));
+    return 0;
+}
